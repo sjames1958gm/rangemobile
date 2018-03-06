@@ -5,7 +5,7 @@ import {
 } from './types';
 
 export const getExercises = (ipAddr) => {
-  let url = `http://${ipAddr}/exercises`
+  let url = `http://${ipAddr}/dir/exercises`
   console.log(url);
   return (dispatch) => {
     dispatch({type: GET_EXERCISE_LIST_STARTED});
